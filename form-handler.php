@@ -4,7 +4,7 @@ $visitor_email = $_POST['email'];
 $subject = $_POST['phonenumber'];
 $message = $_POST['message'];
 
-$email_from = 'info@bishalkumarmishra.com.np';
+$email_from = 'info@rsm.com.np';
 
 $email_phnumber = 'New Form Submission';
 
