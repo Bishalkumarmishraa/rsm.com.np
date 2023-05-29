@@ -4,7 +4,7 @@ $visitor_email = $_POST['email'];
 $subject = $_POST['phonenumber'];
 $message = $_POST['message'];
 
-$email_from = 'info@rsm.com.np';
+$email_from = 'bishalmishra9000@gmail.com';
 
 $email_phnumber = 'New Form Submission';
 
@@ -13,7 +13,7 @@ $email_body = "User Name: $name.\n".
             "Phone Number: $phone_number.\n".
             "User Message: $message.\n";
 
-$to = 'bishalmishra9000@gmail.com';
+$to = 'info@rsm.com.np';
 
 $headers = "From: $email_from \r\n";
 
