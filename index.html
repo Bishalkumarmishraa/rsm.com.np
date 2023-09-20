@@ -33,6 +33,50 @@ awesome/4.7.0/css/font-awesome.min.css">
     <h1>Welcome To BT Mobile Care</h1> 
     <p>Best Technology Mobile Care. </p> <a href="" class="hero-btn">visit us to know More</a> 
    </div> 
+         <!---------- slider ------>
+     
+    <div class="slider-container">
+        <div class="slider-images">
+            <img class="slider-image" src="images/image1.jpg.jpg" alt="Image 1">
+            <img class="slider-image" src="images/image2.jpg.jpg" alt="Image 2">
+            <img class="slider-image" src="images/image3.jpg.jpg" alt="Image 3">
+            
+            <!-- Add more images as needed -->
+            
+        </div>
+        <button class="slider-button prev-button" onclick="prevSlide()">&#10094; Previous</button>
+        <button class="slider-button next-button" onclick="nextSlide()">Next &#10095;</button>
+    </div>
+
+    <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.slider-image');
+
+        function showSlide(index) {
+            images.forEach((image, i) => {
+                if (i === index) {
+                    image.style.display = 'block';
+                } else {
+                    image.style.display = 'none';
+                }
+            });
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % images.length;
+            showSlide(currentIndex);
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            showSlide(currentIndex);
+        }
+
+        // Show the initial slide
+        showSlide(currentIndex);
+    </script>
+      </section>
+</body>
   </section> <!-- Course ------> 
   <section class="Course"> 
    <h1>Bt Mobile Care</h1> 
