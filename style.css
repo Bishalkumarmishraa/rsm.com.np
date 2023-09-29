@@ -487,6 +487,15 @@ blockquote::after
     margin: 3px;
     color: red;
 }
+.locationiframe{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+    
+}
+.location iframe{
+    width: 100%;
+}
 
 
 
